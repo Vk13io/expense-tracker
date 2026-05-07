@@ -853,7 +853,7 @@ async function sendChatNvidia(question) {
           'X-Title': 'Expense Tracker'
         },
         body: JSON.stringify({
-          model: 'meta/llama-3.1-8b-instruct:free',
+          model: 'openrouter/auto',
           messages: [
             { role: 'system', content: `You are a personal finance advisor for an Indian salaried employee. Data:\n${context}\nGive concise India-specific advice. Use ₹. Under 150 words.` },
             { role: 'user', content: question }
